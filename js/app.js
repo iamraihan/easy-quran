@@ -9,9 +9,7 @@ function getSura() {
   fetch("https://api.quran.sutanlab.id/surah")
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data.data);
       for (let surah in data.data) {
-        // console.log(surah);
 
         surahContainer.innerHTML += `
   <div>
